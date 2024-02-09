@@ -16,4 +16,12 @@ function dropByTwoElement(arr) {
 	}
 }
 
+function dropByTwoElement1(arr, count) {
+	for (let i = 0; i < arr.length; i += count) {
+		console.log(arr.slice(i, i + count));
+	}
+}
+
 dropByTwoElement([1, 2, 3, 4, 5, 6]);
+
+dropByTwoElement1([1, 2, 3, 4, 5, 6], 2);
